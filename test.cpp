@@ -5,9 +5,10 @@ using namespace std;
 using namespace CSVParser;
 
 int main() {
-	ifstream Fs("test.csv");
+	// wfstream Fs("test.csv", std::fstream::in);
 
-	CSVReadStream s(Fs);
+	string filename = "test.csv";
+	CSVReadStream s(filename);
 
-	Fs.close();
+	// Fs.close();
 }
